@@ -16,5 +16,5 @@ services:
     environment:
       - API_ENDPOINT=http://api:5000/api/
   redis:
-    image: essole/redis
+    image: redis
 
