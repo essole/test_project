@@ -38,11 +38,11 @@ spec:
   selector:
     app: web
   ports:
-  - name: api_port
+  - name: apiport
     protocol: TCP
     port: 5000
     targetPort: 5000
-  - name: web_port
+  - name: webport
     protocol: TCP
     port: 8081
     targetPort: 80
