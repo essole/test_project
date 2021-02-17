@@ -38,8 +38,10 @@ spec:
   selector:
     app: web
   ports:
-  - port: 5000
+  - name: api_port
+    port: 5000
     targetPort: 5000
-  -port: 8081
+  - name: web_port
+    port: 8081
     targetPort: 80
   
