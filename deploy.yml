@@ -39,9 +39,11 @@ spec:
     app: web
   ports:
   - name: api_port
+    protocol: TCP
     port: 5000
     targetPort: 5000
   - name: web_port
+    protocol: TCP
     port: 8081
     targetPort: 80
   
