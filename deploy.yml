@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   labels:
     app: web
-  name: DevOpsProject
+  name: devopsproject
 spec:
   replicas: 3
   selector:
