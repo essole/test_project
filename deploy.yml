@@ -33,7 +33,7 @@ kind: Service
 metadata:
   labels:
     app: web
-  name: DevOpsProject
+  name: devopsproject
 spec:
   selector:
     app: web
