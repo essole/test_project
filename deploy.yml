@@ -1,9 +1,10 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
     app: web
-  name: DevOpsProject
+  name: devopsproject
 spec:
   replicas: 3
   selector:
@@ -26,24 +27,23 @@ spec:
       - name: redis
         image:  redis
         
-      
-
-
 ---
 apiVersion: v1
 kind: Service
 metadata:
   labels:
     app: web
-  name: DevOpsProject
+  name: devopsproject
 spec:
   selector:
     app: web
   ports:
-  - port: 5000
+  - name: apiport
     protocol: TCP
+    port: 5000
     targetPort: 5000
-  -port: 8081
+  - name: webport
     protocol: TCP
+    port: 8081
     targetPort: 80
   
